@@ -105,6 +105,9 @@ Other NAC products might require you include a device ID when using NAC with iOS
 
 To learn more about certificate profiles, see: [Use SCEP certificate profiles with Microsoft Intune](../protect/certificates-profile-scep.md) and [Use a PKCS certificate profile to provision devices with certificates in Microsoft Intune](../protect/certificates-pfx-configure.md)
 
+> [!NOTE]
+Linux devices are not supported as Intune currently does not have a capacity to retreive the device inevntroy for MAC address https://learn.microsoft.com/en-us/mem/intune/remote-actions/device-inventory#:~:text=Hardware%20device%20details%20are%20currently%20not%20supported%20for%20Linux%20devices and also they are not support for PKCS/SCEP profiles. https://learn.microsoft.com/en-us/mem/intune/protect/certificates-configure#supported-platforms-and-certificate-profiles
+
 ## Data shared with NAC partners
 
 The specific device properties that are shared with NAC partners depend on the version of the NAC API the NAC product uses. Contact your NAC partner for more information on which version of the NAC or Compliance Retrieval API your NAC product uses.
